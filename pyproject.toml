@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dicom-extremities-preprocessor"
+version = "0.1.0"
+description = "Preprocess extremity X-ray DICOMs (hands/feet): photometric standardization, left-right orientation normalization, and bilateral hand splitting."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pydicom>=2.4",
+  "numpy>=1.21",
+  "pandas>=1.3",
+  "pyyaml>=6.0",
+  "SimpleITK>=2.3",
+  "scikit-learn>=1.0",
+]
+
+[project.scripts]
+dicom-extremities-preprocessor = "dicom_extremities_preprocessor.cli:main"
+
+[project.optional-dependencies]
+dev = [
+  "pre-commit>=3.5",
+  "nbstripout>=0.9.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dicom_extremities_preprocessor*"]
+
+[tool.setuptools.package-data]
+dicom_extremities_preprocessor = ["resources/*.yaml"]

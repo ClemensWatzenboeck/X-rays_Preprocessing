@@ -1,2 +1,76 @@
+# --- Project ---
 data/
 src/logger/
+outputs/
+scratch/
+tmp/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+
+# --- Virtual environments ---
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# --- Testing / coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# --- Type checkers / linters ---
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- IDEs / editors ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Secrets / local config ---
+.env
+.env.*
+!.env.example
+
+# --- Logs ---
+*.log
+logs/
