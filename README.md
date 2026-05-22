@@ -20,7 +20,7 @@ The inital version was written by Thomas Deimel and can be seen here:
 
 Some parts of Viktoriia are still only in `src`. Look there for the full preprocessing pipeline. 
 
-### Description of `src` from Viktorria: 
+### Description of `src` from Viktoriia Ovsianik (see fork) for original version: 
 
 It downloads raw DICOM files extracted from the server and performs the following operations:
 
