@@ -65,8 +65,8 @@ categories:
     hand:
       - '\bhand\b'
       - '\bhandgelenk\b'
-      - '\bfinger\b'
       - '\bunterarm\s*/\s*handgelenk\b'
+
 
     foot:
       - '\bfuss\b'
@@ -87,6 +87,7 @@ categories:
       - '\bbecken\b'
       - '\bhuefte\b'
       - '\bdexa\b'
+      - '\bfinger\b'      
 
   series_description_laterality:
     B:
